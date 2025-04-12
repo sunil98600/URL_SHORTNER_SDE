@@ -38,8 +38,8 @@ A full-stack Micro-SaaS application that allows users to shorten URLs, track tot
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/link-analytics-dashboard.git
-cd link-analytics-dashboard
+git clone https://github.com/sunil98600/URL_SHORTNER_SDE.git
+cd URL_SHORTNER_SDE
 
 ```
 ### 2.Backend Setup (in /server)
