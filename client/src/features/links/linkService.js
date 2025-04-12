@@ -6,12 +6,12 @@ const getLinks = async () => {
 };
 
 const createLink = async (data) => {
-  const res = await API.post('/links', data);
+  const res = await API.post('links', data);
   return res.data;
 };
 
 const getAnalytics = async (id) => {
-  const res = await API.get(`/links/${id}/analytics`);
+  const res = await API.get(`links/${id}/analytics`);
   return res.data;
 };
 

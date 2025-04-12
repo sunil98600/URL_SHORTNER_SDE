@@ -6,6 +6,7 @@ import {
   PieChart, Pie, Cell, Legend
 } from 'recharts';
 import {QRCodeSVG} from 'qrcode.react';
+import API from '../utils/api';
 
 const COLORS = ['#8884d8', '#82ca9d', '#ffc658', '#ff8042', '#00C49F'];
 
@@ -21,7 +22,7 @@ export default function Dashboard() {
 
   const handleRedirect = async (shortId) => {
     try {
-      window.open(`https://url-shortner-sde-backend.onrender.com/${shortId}`, '_blank');
+      window.open(`${API.defaults.baseURL.replace('/api', '')}/${shortId}`, '_blank');
     } catch (error) {
       console.error('Redirect error:', error);
     }
@@ -82,7 +83,7 @@ export default function Dashboard() {
                 </td>
                 <td>
   <div className="p-2"> 
-    <QRCodeSVG value={`https://url-shortner-sde-backend.onrender.com/${link.customAlias || link.shortId}`} />
+    <QRCodeSVG value={`${API.defaults.baseURL.replace('/api', '')}/${link.customAlias || link.shortId}`} />
   </div>
 </td>
               </tr>
