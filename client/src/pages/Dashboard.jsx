@@ -21,7 +21,7 @@ export default function Dashboard() {
 
   const handleRedirect = async (shortId) => {
     try {
-      window.open(`http://localhost:5000/${shortId}`, '_blank');
+      window.open(`https://url-shortner-sde-backend.onrender.com/${shortId}`, '_blank');
     } catch (error) {
       console.error('Redirect error:', error);
     }
@@ -82,7 +82,7 @@ export default function Dashboard() {
                 </td>
                 <td>
   <div className="p-2"> 
-    <QRCodeSVG value={`http://localhost:5000/${link.customAlias || link.shortId}`} />
+    <QRCodeSVG value={`https://url-shortner-sde-backend.onrender.com/${link.customAlias || link.shortId}`} />
   </div>
 </td>
               </tr>
