@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import LinkService from './LinkService';
+import LinkService from './linkService';
 
 export const fetchLinks = createAsyncThunk('links/fetch', LinkService.getLinks);
 export const createLink = createAsyncThunk('links/create', LinkService.createLink);
