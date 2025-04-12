@@ -3,8 +3,8 @@ const isProduction = import.meta.env.MODE === 'production';
 
 const API = axios.create({
   baseURL: isProduction
-    ? import.meta.env.VITE_API_URL_PROD
-    : import.meta.env.VITE_API_URL_DEV,
+    ? "https://url-shortner-sde-backend.onrender.com/api"
+    : 'http://localhost:5000/api',
 });
 
 API.interceptors.request.use((config) => {
