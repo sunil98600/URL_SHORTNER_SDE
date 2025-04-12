@@ -71,7 +71,7 @@ npm run dev
 ```
 
 ### Login Credentials
-email : intern@Dacoid.com
+email : intern@dacoid.com
 password : Test123
 
 ### Features
