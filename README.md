@@ -70,36 +70,6 @@ npm install
 npm run dev
 ```
 
-link-analytics-dashboard/
-├── client/                # Frontend (React + Redux + Vite)
-│   ├── public/
-│   ├── src/
-│   │   ├── assets/         # Static images, icons
-│   │   ├── components/     # Reusable components (e.g., Navbar, QRCode)
-│   │   ├── features/       # Redux slices
-│   │   │   ├── auth/       # Auth slice
-│   │   │   └── links/      # Link slice and API logic
-│   │   ├── pages/          # Pages like Dashboard, Login, Register
-│   │   ├── App.jsx         # Main App component
-│   │   └── main.jsx        # ReactDOM rendering
-│   ├── .env                # VITE_API_URL
-│   ├── index.html
-│   ├── tailwind.config.js
-│   └── vite.config.js
-│
-├── server/               # Backend (Node.js + Express)
-│   ├── controllers/       # Logic for routes (e.g., linkController.js)
-│   ├── middleware/        # Middleware like auth, error handlers
-│   ├── models/            # Mongoose models (User, Link, Analytics)
-│   ├── routes/            # Route definitions
-│   ├── utils/             # Utility functions (optional)
-│   ├── .env               # Mongo URI, JWT_SECRET, etc.
-│   ├── index.js           # Entry point
-│   └── package.json
-│
-├── .gitignore
-├── README.md
-
 
 ### Features
 Device/browser pie charts
