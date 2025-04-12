@@ -70,6 +70,9 @@ npm install
 npm run dev
 ```
 
+### Login Credentials
+email : intern@Dacoid.com
+password : Test123
 
 ### Features
 Device/browser pie charts
